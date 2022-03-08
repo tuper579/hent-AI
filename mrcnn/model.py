@@ -20,7 +20,8 @@ import tensorflow as tf
 import keras
 import keras.backend as K
 import keras.layers as KL
-import keras.engine.topology as KE
+import keras.engine as KE
+from keras.layers import Layer
 import keras.models as KM
 
 from mrcnn import utils
