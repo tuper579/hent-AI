@@ -3,7 +3,7 @@ import os.path
 import cv2
 import numpy as np
 import torch
-import architecture
+import ColabESRGAN.architecture
 import math
 
 # ESRGAN class allows abstraction of warmup and inference.
