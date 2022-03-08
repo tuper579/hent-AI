@@ -88,12 +88,12 @@ class Detector():
             print("ERROR in Detector init: ESRGAN model not found, make sure you have 4x_FatalPixels_340000_G.pth in this directory")
             return
         # Scan for cuda compatible GPU for ESRGAN. Mask-RCNN *should* automatically use a GPU if available.
-        self.hardware = 'cpu'
-        if self.model.check_cuda_gpu()==True:
+        #self.hardware = 'cpu'
+        #if self.model.check_cuda_gpu()==True:
             #NOTE: Edit this because I am having cuda errors :(
             # print("CUDA-compatible GPU located! ****DEBUG CPU MODE****")
-            print("CUDA-compatible GPU located!")
-            self.hardware = 'cuda'
+            #print("CUDA-compatible GPU located!")
+        self.hardware = 'cuda'
         # destroy model. Will re init during weight load.
         self.model = []
 
